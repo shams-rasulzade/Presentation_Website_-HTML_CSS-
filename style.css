@@ -19,6 +19,7 @@ body
 
 
 
+
 /* Page  */
 
 .page
@@ -67,6 +68,7 @@ body
 
 
 
+
 /* Buttons */
 
 .btn
@@ -93,4 +95,37 @@ body
 {
     background: #f4f4f4;
     color: #333;
+}
+
+
+
+
+/* Page Animation */
+
+#page-1 h1
+{
+    transform: translateY(-1200px);
+    animation: heading var(--animate-speed) forwards ease-out;
+}
+
+@keyframes heading
+{
+    to 
+    {
+      transform: translate(0); /* o is its deafult position */
+    }
+}
+
+#page-1 p
+{
+    transform: translateX(-1500px);
+    animation: paragraph var(--animate-speed) 1s forwards ease-out;
+}
+
+@keyframes paragraph
+{
+    to 
+    {
+        transform: translate(0);
+    }
 }
